@@ -1,0 +1,15 @@
+package com.example.sq_ch11_ex2.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.client.RestTemplate;
+
+@Configuration
+public class ProjectConfig {
+
+    @Bean
+    public RestTemplate restTemplate(){
+        return new RestTemplate();
+    }
+}
